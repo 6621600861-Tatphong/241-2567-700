@@ -1,0 +1,31 @@
+docker rum -p 80:80 nginx // runnighnx on port 80
+docker ps --all // list all container
+docker rm <container_id> // remove container
+docker exec -it <container_id> bash // go in container
+ls // list files
+pwd // print working directory
+cd  // change directory
+cat  //print file content
+cd .. //goback
+exit //exit container
+docker stope <container_id>//stop container
+docker system prune // remove all stop container
+docker-compose up -d //
+docker-compose down //
+
+const { BADHINTS } = require('dns');
+const http = require('http'); // Import Node.js core module
+
+const host = 'localhost';
+const port = 8000; // port number
+
+//กำหนด Listener ให้ กับ Server เมื่อเปิดไป เว็บ http://localhost:8000/ จะเรียใช้งาน function requireListener
+const requireListener = function (req,res){
+    res.writeHead(200);
+    res.end("My First Server");
+}
+
+const server = http.createServer(requireListener);
+server.listen(port, host , () => {
+    console.log
+})
