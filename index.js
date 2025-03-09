@@ -51,7 +51,8 @@ const submitData = async () => {
 
         console.log('submitData', userData);
 
-        // const errors = validateData(userData);
+        const errors = validateData(userData);
+        
         // if (errors.length > 0) {
         //     //มี error
         //     throw {
@@ -64,21 +65,22 @@ const submitData = async () => {
         console.log('response', response.data);
         messageDOM.innerText = 'บันทึกข้อมูลเรียบร้อย'
         messageDOM.className = 'message success'
+
     } catch (error) {
         console.log('error message', error.message);
         console.log('error', error.errors);
 
         if (error.response) {
-            console.error(error.response);
+            console.log(error.response);
             error.message = error.response.data.message;
             error.errors = error.response.data.errors;
         }
 
         let htmlData = '<div>';
-        htmlData += `<div> ${error.message} </div>`; //fix 
+        htmlData += `<div> ${error.message} </div>`
         htmlData += '<ul>';
-        for (let i = 0; i < error.errors.length; i++) {
-            htmlData += `<li>${error.errors[i]}</li>`; //fix
+        for (let i = 0 ; i < error.errors.length ; i++) {
+            htmlData += `<li> ${error.errors[i]} </li>`
         }
         htmlData += '</ul>';
         htmlData += '</div>';

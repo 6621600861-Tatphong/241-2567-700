@@ -57,12 +57,12 @@ app.post('/users', async (req, res) => {
 
     try {
         let user = req.body;
-        const errors = validateData(userData);
+        const errors = validateData(user)
         if (errors.length > 0) {
             //มี error
             throw {
                 message: 'กรุณากรอกข้อมูลให้ครบถ้วน',
-                errors: errors
+                errors : errors
             }
         }
         const results = await conn.query('INSERT INTO users SET ?', user) //คำสั่ง SQL สำหรับเพิ่มข้อมูลลงในตาราง users
@@ -75,7 +75,7 @@ app.post('/users', async (req, res) => {
         const errors = error.errors || []
         console.error("error message: ", error.message)
         res.status(500).json({
-            message: 'errorsMessage',
+            message: errorMessage,
             errors: errors
         })
     }
