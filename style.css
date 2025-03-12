@@ -3,20 +3,39 @@
     src: url('./Kanit/Kanit-Regular.ttf') ;
 }
 
+.changebg{
+    background-color:#D4EBF8;
+}
+
 .container {
+    border: 2px solid #16404D;
     width: 100%;
+    margin-top: 100px;
     margin-left: auto;
     max-width: 640px;
     margin-right: auto;
-    background-color: lemonchiffon;
     padding: 20px;
     box-sizing:border-box;
+
+    box-shadow: 0 0 50px  #FFDCCC;
+    background-filter: blur(10px);
+    border-radius: 10px;
+    background-color:white;
+}
+
+.background{
+    background-color: #D4EBF8;
 }
 
 .header  {
     font-size: 30px;
     text-align: center;
-    margin-bottom: 20px;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+
+    color: white ;
+    background-color: #153448;
 }
 
 .header-form{
@@ -32,18 +51,14 @@
 }
 
 input.form, textarea{
-    border: 1px solid saddlebrown;
+    border: 1px solid #00879E;
+    background-color: #FBFBFB;
+    border-radius: 3px;
     width: 100%;
 }
 
 .center{
     text-align: center;
-}
-
-.button{
-    border: 2px solid saddlebrown;
-    width: 50%;
-    height: 40px;
 }
 
 .message{
@@ -62,6 +77,50 @@ input.form, textarea{
     background-color: lightcoral;
     display: block;
 }
+
+.button {
+    transition-duration: 0.5s;
+    background-color: white;
+    margin-top: 10px;
+    
+ }
+ 
+ .button1 {
+    background-color: white;
+    color: #1C325B;
+
+    font-size: 19px;
+    border: 2px solid #1C325B;
+    border-radius: 9px;
+    padding: 10px 200px;
+ }
+ 
+ .button1:hover{
+    background-color: #1C325B;
+    color: white;
+ 
+ }
+
+ .button2 {
+    background-color: white;
+    color: #1C325B;
+    border: 2px solid #1C325B;
+
+    margin-top: 10px;
+    border-radius: 9px;
+    padding: 5px;
+ }
+ 
+ .button2:hover{
+    background-color: #1C325B;
+    color: white;
+ 
+ }
+ 
+
+
+
+
 
 @media screen and (max-width: 768px){
     .flex{

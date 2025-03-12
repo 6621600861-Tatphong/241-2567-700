@@ -1,0 +1,91 @@
+@font-face {
+   font-family: 'Kanit';
+   src: url('./Kanit/Kanit-Regular.ttf') ;
+}
+
+.bgcolor{
+   background-color: #D4EBF8;
+}
+
+.container {
+   border: 2px solid #16404D;
+   width: 100%;
+   margin-top: 100px;
+   margin-left: auto;
+   max-width: 640px;
+   margin-right: auto;
+   background-color: white;
+   padding: 20px;
+   box-sizing:border-box;
+   border-radius: 10px;
+   box-shadow: 0 0 50px  #FFDCCC;
+    background-filter: blur(10px);
+}
+
+.header  {
+   font-size: 23px;
+   text-align: center;
+   padding: 10px;
+   margin-bottom: 13px;
+   border-radius: 9px;
+
+   color: white;
+   background-color: #153448;
+}
+
+table {
+   border-collapse: collapse;
+   width: 100%;
+   background-color: white;
+ }
+ 
+ th, td {
+   text-align: left;
+   border: 1px solid black;
+   padding: 10px;
+ }
+ 
+ tr:nth-child(odd){
+   background-color: #D4EBF8
+ }
+ 
+ th {
+   background-color: #3C5B6F;
+   color: white;
+ }
+
+.balance {
+   text-align: center;          
+   vertical-align: middle;      
+   padding: 5px;              
+ }
+
+.button {
+   transition-duration: 0.5s;
+   background-color: white;
+   padding: 5px 10px;
+   margin-top: 10px;
+}
+
+.button1 {
+   background-color: white;
+   color: #1C325B;
+   border: 2px solid #1C325B; ;
+   border-radius: 9px;
+}
+
+.button1:hover{
+   background-color: #1C325B;
+   color: white;
+
+}
+
+.button2:hover{
+   background-color: #3E5879;
+   color: white;
+
+}
+.position{
+   text-align: center;
+   margin-top: 5px;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class='changebg' lang="en">
 <head>
     <!-- แสดงทางจอ -->
     <meta charset="UTF-8">
@@ -9,13 +9,17 @@
 </head>
 <body>
 
-    <a href="user.html">Go to User management</a>
+<div class='background'>
+    
 
     <!--form -->
 
 <div class="container">
 
+    
+
     <div class="header"> Register form </div>
+
 
     <div class="flex form-input">
         <div class="header-form"> ชื่อ </div>
@@ -60,6 +64,7 @@
         </div>
 
     </div>
+
     <div class="form-input">
         คำอธิบาย
         <textarea name="description"></textarea>
@@ -68,9 +73,16 @@
     <div id = message class="message"></div>
 
     <div class="center">
-        <button onclick="submitData()" class ="button"> ส่งข้อมูล </button>
+        <button onclick="submitData()" class='button button1'> ส่งข้อมูล </button>
     </div>
-        
+    
+    <div class='center'>
+        <a href="user.html">
+            <button class='button2' >Go to User management</button>
+        </a>
+    </div>
+
+</div>    
 </div>
 <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 <script src="index.js"></script>   
