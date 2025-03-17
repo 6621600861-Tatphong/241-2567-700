@@ -4,42 +4,53 @@
 }
 
 .changebg{
-    background-color:#D4EBF8;
+    background:url(https://i.pinimg.com/736x/af/18/4a/af184a5bfc0ddffeaeecd9459eb0a1ac.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+
 }
 
 .container {
-    border: 2px solid #16404D;
+    border: 2px solid #410445;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 10px;
     margin-left: auto;
     max-width: 640px;
     margin-right: auto;
     padding: 20px;
     box-sizing:border-box;
+    margin-top: 120px;
 
-    box-shadow: 0 0 50px  #FFDCCC;
-    background-filter: blur(10px);
-    border-radius: 10px;
-    background-color:white;
+
+    background: transparent;
+    box-shadow: 0 0 70px  #FCD8D4;
+    border-radius: 20px;
+ 
+    backdrop-filter: blur(40px);
+
 }
 
-.background{
-    background-color: #D4EBF8;
-}
+
 
 .header  {
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     padding: 10px;
     margin-bottom: 40px;
     border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 
     color: white ;
-    background-color: #153448;
 }
 
 .header-form{
-    width: 140px;
+    width: 120px;
+
+
+
 }
 
 .flex{
@@ -48,13 +59,15 @@
 
 .form-input{
     margin-bottom: 10px;
+    color: #1E212D;
 }
 
 input.form, textarea{
-    border: 1px solid #00879E;
+    border: 1px solid #D14D72;
     background-color: #FBFBFB;
     border-radius: 3px;
     width: 100%;
+    
 }
 
 .center{
@@ -87,24 +100,24 @@ input.form, textarea{
  
  .button1 {
     background-color: white;
-    color: #1C325B;
+    color: #6A2C70;
 
     font-size: 19px;
-    border: 2px solid #1C325B;
+    border: 2px solid #6A2C70;
     border-radius: 9px;
     padding: 10px 200px;
  }
  
  .button1:hover{
-    background-color: #1C325B;
+    background-color: #6A2C70;
     color: white;
  
  }
 
  .button2 {
     background-color: white;
-    color: #1C325B;
-    border: 2px solid #1C325B;
+    color: #6A2C70;
+    border: 2px solid #6A2C70;
 
     margin-top: 10px;
     border-radius: 9px;
@@ -112,7 +125,7 @@ input.form, textarea{
  }
  
  .button2:hover{
-    background-color: #1C325B;
+    background-color: #6A2C70;
     color: white;
  
  }
@@ -127,7 +140,7 @@ input.form, textarea{
         flex-direction: column;
     }
     .header{
-        font-size: 24px;
+        font-size: px;
     }
     .button{
         width: 100%;

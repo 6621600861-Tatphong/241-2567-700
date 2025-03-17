@@ -22,6 +22,10 @@ const loadData = async () => {
             <tr>
                <th class='balance'>ID</th>
                <th class='balance'>Name</th>
+               <th class='balance'>Age</th>
+               <th class='balance'>gender</th>
+               <th class='balance'>Interest</th>
+               <th class='balance'>description</th>
                <th class='balance'>Action</th>
             </tr>
          `
@@ -39,6 +43,18 @@ const loadData = async () => {
                <td > 
                   ${user.firstname} 
                   ${user.lastname} 
+               </td>
+               <td > 
+                  ${user.age}
+               </td>
+               <td > 
+                  ${user.gender}
+               </td>
+               <td > 
+                  ${user.interests}
+               </td>
+               <td > 
+                  ${user.description}
                </td>
 
                <td class='balance '>

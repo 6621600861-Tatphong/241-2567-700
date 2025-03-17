@@ -4,22 +4,31 @@
 }
 
 .bgcolor{
-   background-color: #D4EBF8;
+    background:url(https://i.pinimg.com/736x/af/18/4a/af184a5bfc0ddffeaeecd9459eb0a1ac.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .container {
-   border: 2px solid #16404D;
+   border: 2px solid #410445;
    width: 100%;
-   margin-top: 100px;
+   margin-top: 10px;
    margin-left: auto;
    max-width: 640px;
    margin-right: auto;
-   background-color: white;
    padding: 20px;
    box-sizing:border-box;
-   border-radius: 10px;
-   box-shadow: 0 0 50px  #FFDCCC;
-    background-filter: blur(10px);
+   margin-top: 120px;
+
+
+   background: transparent;
+   box-shadow: 0 0 70px  #FCD8D4;
+   border-radius: 20px;
+
+   backdrop-filter: blur(40px);
 }
 
 .header  {
@@ -30,7 +39,7 @@
    border-radius: 9px;
 
    color: white;
-   background-color: #153448;
+   background-color:rgb(92, 10, 74);
 }
 
 table {
@@ -46,11 +55,11 @@ table {
  }
  
  tr:nth-child(odd){
-   background-color: #D4EBF8
+   background-color: #FFC8C8;
  }
  
  th {
-   background-color: #3C5B6F;
+   background-color: #D14D72;
    color: white;
  }
 
@@ -69,19 +78,19 @@ table {
 
 .button1 {
    background-color: white;
-   color: #1C325B;
-   border: 2px solid #1C325B; ;
+   color: #52057B;
+   border: 2px solid #52057B; ;
    border-radius: 9px;
 }
 
 .button1:hover{
-   background-color: #1C325B;
+   background-color: #52057B;
    color: white;
 
 }
 
 .button2:hover{
-   background-color: #3E5879;
+   background-color: #F38BA0;
    color: white;
 
 }
